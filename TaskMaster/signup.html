@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskMaster - Sign Up</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Decorative Elements -->
+      <div class="deco-1"></div>
+      <div class="deco-2"></div>
+      <div class="deco-3"></div>
+      <div class="deco-4"></div>
+      <div class="deco-5"></div>
+
+      <!-- Sign Up Card -->
+      <div class="card">
+        <!-- Icon -->
+        <div class="icon-container">
+          <div class="icon-wrapper">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="icon-badge"></div>
+          </div>
+        </div>
+
+        <!-- Title -->
+        <h1>Join TaskMaster</h1>
+        <p class="subtitle">Create an account to boost your productivity</p>
+
+        <!-- Tabs -->
+        <div class="tabs">
+          <button class="tab" onclick="window.location.href='login.html'">
+            Login
+          </button>
+          <button class="tab active">Sign Up</button>
+        </div>
+
+        <!-- Form -->
+        <form id="signupForm">
+          <!-- Full Name Field -->
+          <div class="form-group">
+            <label for="fullName">Full Name*</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24">
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <input
+                type="text"
+                id="fullName"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="signupEmail">Email Address*</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m2 7 10 7 10-7"></path>
+              </svg>
+              <input
+                type="email"
+                id="signupEmail"
+                placeholder="hello@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Password Field -->
+          <div class="form-group">
+            <label for="signupPassword">Password*</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <input
+                type="password"
+                id="signupPassword"
+                placeholder="••••••••"
+                required
+                minlength="6"
+              />
+            </div>
+            <p class="password-hint">
+              Password must be at least 6 characters long
+            </p>
+          </div>
+
+          <!-- Buttons -->
+          <div class="button-group">
+            <button type="button" class="btn-secondary">
+              <span style="font-size: 1.125rem">?</span>
+              Help?
+            </button>
+            <button type="submit" class="btn-primary">Create Account</button>
+          </div>
+        </form>
+
+        <!-- Footer -->
+        <div class="footer">
+          <p>
+            By continuing, you agree to our
+            <a href="#">Terms of Service</a>
+            &
+            <a href="#">Privacy Policy</a>
+          </p>
+          <p class="copyright">
+            © 2024 TaskMaster | Made for University Students
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="signup.js"></script>
+  </body>
+</html>

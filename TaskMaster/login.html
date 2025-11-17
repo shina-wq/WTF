@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskMaster - Login</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Decorative Elements -->
+      <div class="deco-1"></div>
+      <div class="deco-2"></div>
+      <div class="deco-3"></div>
+      <div class="deco-4"></div>
+      <div class="deco-5"></div>
+
+      <!-- Login Card -->
+      <div class="card">
+        <!-- Icon -->
+        <div class="icon-container">
+          <div class="icon-wrapper">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="icon-badge"></div>
+          </div>
+        </div>
+
+        <!-- Title -->
+        <h1>Welcome Back!</h1>
+        <p class="subtitle">Enter your details to access your account</p>
+
+        <!-- Tabs -->
+        <div class="tabs">
+          <button class="tab active">Login</button>
+          <button class="tab" onclick="window.location.href='signup.html'">
+            Sign Up
+          </button>
+        </div>
+
+        <!-- Form -->
+        <form id="loginForm">
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="loginEmail">Email Address*</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m2 7 10 7 10-7"></path>
+              </svg>
+              <input
+                type="email"
+                id="loginEmail"
+                placeholder="hello@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Password Field -->
+          <div class="form-group">
+            <label for="loginPassword">Password*</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <input
+                type="password"
+                id="loginPassword"
+                placeholder="••••••••"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="button-group">
+            <button type="button" class="btn-secondary">
+              <span style="font-size: 1.125rem">?</span>
+              Help?
+            </button>
+            <button type="submit" class="btn-primary">Next Step</button>
+          </div>
+        </form>
+
+        <!-- Footer -->
+        <div class="footer">
+          <p>
+            By continuing, you agree to our
+            <a href="#">Terms of Service</a>
+            &
+            <a href="#">Privacy Policy</a>
+          </p>
+          <p class="copyright">
+            © 2024 TaskMaster | Made for University Students
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./login.js"></script>
+  </body>
+</html>
